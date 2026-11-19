@@ -2,433 +2,536 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#080d18">
 
-<title>ARTIN MIANJI | XAUUSD Trading</title>
-<meta name="description" content="Artin Mianji — Professional XAUUSD analyst and trader. Specialized gold market analysis, trading strategies and account management.">
-<meta name="keywords" content="Artin Mianji, XAUUSD, Gold Trading, Forex, Trading Analysis">
+<title>Artin Mianji | XAUUSD Analyst & Trader</title>
+<meta name="description" content="وب‌سایت رسمی آرتین میانجی؛ تحلیلگر و معامله‌گر تخصصی بازار جهانی طلا XAUUSD.">
+<meta name="author" content="Artin Mianji">
+<meta name="robots" content="index, follow">
 <link rel="canonical" href="https://artynmyanjy.github.io/">
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap');
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+<style>
 :root {
-  --bg: #080d18;
-  --panel: #101827;
-  --gold: #d6b36a;
-  --gold-light: #f0d99d;
-  --text: #f4f0e7;
-  --muted: #a5a9b3;
-  --line: rgba(214,179,106,.2);
+  --bg:#080d18;
+  --surface:#101a2b;
+  --surface2:#131f33;
+  --gold:#d7b56d;
+  --gold-light:#efdaa7;
+  --white:#f5f6fa;
+  --muted:#aab5c7;
+  --line:#263247;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior:smooth;
+}
 
 body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'Vazirmatn', sans-serif;
-  line-height: 1.9;
-  overflow-x: hidden;
+  background:var(--bg);
+  color:var(--white);
+  font-family:'Vazirmatn',sans-serif;
+  line-height:1.9;
 }
 
 body[dir="ltr"] {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family:'Inter',sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color:inherit;
+  text-decoration:none;
 }
 
 .container {
-  width: min(1120px, 90%);
-  margin: auto;
+  width:min(1120px,calc(100% - 42px));
+  margin:auto;
 }
 
 header {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  background: rgba(8,13,24,.94);
-  backdrop-filter: blur(15px);
-  border-bottom: 1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(8,13,24,.92);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
 }
 
-.nav {
-  height: 82px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+nav {
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
 }
 
 .logo {
-  width: 48px;
-  height: 48px;
-  flex-shrink: 0;
+  font-weight:800;
+  letter-spacing:1.5px;
+  direction:ltr;
+  font-family:'Inter',sans-serif;
+  font-size:18px;
 }
 
-.brand-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 21px;
-  letter-spacing: 2px;
-  color: var(--gold-light);
-  direction: ltr;
+.logo b {
+  color:var(--gold);
 }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 27px;
-  font-size: 13px;
-  color: var(--muted);
+.links {
+  display:flex;
+  gap:25px;
+  font-size:13px;
+  color:var(--muted);
 }
 
-.nav-links a:hover { color: var(--gold-light); }
+.links a {
+  transition:.2s;
+}
 
-.lang-btn {
-  background: transparent;
-  border: 1px solid var(--gold);
-  color: var(--gold-light);
-  border-radius: 4px;
-  padding: 7px 15px;
-  cursor: pointer;
-  font-family: inherit;
+.links a:hover {
+  color:var(--gold);
+}
+
+.language {
+  background:transparent;
+  border:1px solid var(--gold);
+  color:var(--gold-light);
+  padding:6px 15px;
+  border-radius:5px;
+  cursor:pointer;
+  font-size:12px;
+  font-family:inherit;
 }
 
 .hero {
-  min-height: 660px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(ellipse at 75% 40%, rgba(214,179,106,.12), transparent 40%),
-    linear-gradient(135deg, #080d18, #101a2b);
+  padding:90px 0 82px;
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:55px;
+  align-items:center;
+  min-height:610px;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  border: 1px solid rgba(214,179,106,.09);
-  border-radius: 50%;
-  left: -180px;
-  top: 100px;
-  box-shadow: 0 0 0 50px rgba(214,179,106,.015),
-              0 0 0 100px rgba(214,179,106,.012);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 720px;
-  padding: 100px 0;
-}
-
-.eyebrow {
-  color: var(--gold);
-  font-size: 13px;
-  letter-spacing: 3px;
-  margin-bottom: 18px;
-  direction: ltr;
+.tag {
+  color:var(--gold);
+  font-size:12px;
+  letter-spacing:2px;
+  font-weight:700;
+  direction:ltr;
 }
 
 .hero h1 {
-  font-size: clamp(38px, 7vw, 72px);
-  line-height: 1.35;
-  margin-bottom: 15px;
-  font-weight: 700;
+  font-size:clamp(44px,7vw,78px);
+  line-height:1.3;
+  margin:15px 0 12px;
+  font-weight:800;
 }
 
-.hero h1 span {
-  color: var(--gold-light);
+.hero h1 em {
+  font-style:normal;
+  color:var(--gold);
 }
 
-.hero-description {
-  color: var(--muted);
-  font-size: 16px;
-  max-width: 570px;
-  margin: 20px 0 30px;
+.hero h2 {
+  font-size:18px;
+  font-weight:500;
+  color:#d9dfeb;
+  margin-bottom:15px;
 }
 
-.hero-buttons {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
+.hero p {
+  max-width:600px;
+  color:var(--muted);
+  font-size:16px;
 }
 
-.btn {
-  padding: 11px 25px;
-  border-radius: 3px;
-  font-size: 14px;
-  transition: .25s;
+.buttons {
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:28px;
 }
 
-.btn-primary {
-  background: var(--gold);
-  color: #111723;
-  font-weight: 700;
+.button {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:11px 21px;
+  border-radius:7px;
+  background:var(--gold);
+  color:#111827;
+  font-weight:700;
+  font-size:13px;
+  transition:.25s;
 }
 
-.btn-primary:hover { background: var(--gold-light); }
-
-.btn-outline {
-  border: 1px solid var(--line);
-  color: var(--gold-light);
+.button:hover {
+  background:var(--gold-light);
+  transform:translateY(-2px);
 }
 
-.btn-outline:hover {
-  border-color: var(--gold);
-  background: rgba(214,179,106,.08);
+.button.ghost {
+  background:transparent;
+  border:1px solid #3b4659;
+  color:var(--white);
 }
 
-.section {
-  padding: 100px 0;
+.button.ghost:hover {
+  border-color:var(--gold);
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 55px;
+/* Original AM visual */
+
+.portrait {
+  height:390px;
+  border:1px solid #68583a;
+  border-radius:24px;
+  background:
+    radial-gradient(circle at 50% 35%,#34445b,#111a2b 62%,#0b111e);
+  display:grid;
+  place-items:center;
+  position:relative;
+  overflow:hidden;
 }
 
-.section-title small {
-  color: var(--gold);
-  letter-spacing: 3px;
-  font-size: 12px;
-  direction: ltr;
-  display: block;
+.portrait:before,
+.portrait:after {
+  content:"";
+  position:absolute;
+  border:1px solid #8b7448;
+  border-radius:50%;
+  width:290px;
+  height:290px;
+  opacity:.4;
 }
 
-.section-title h2 {
-  font-size: 31px;
-  margin-top: 8px;
+.portrait:after {
+  width:220px;
+  height:220px;
 }
 
-.section-title h2 span { color: var(--gold-light); }
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
+.monogram {
+  font-family:'Inter',sans-serif;
+  font-size:110px;
+  font-weight:800;
+  color:var(--gold);
+  z-index:1;
+  letter-spacing:-10px;
+  direction:ltr;
 }
 
-.about-text h3 {
-  color: var(--gold-light);
-  font-size: 24px;
-  margin-bottom: 18px;
+.portrait small {
+  position:absolute;
+  bottom:22px;
+  letter-spacing:5px;
+  color:#aeb8c9;
+  font-size:10px;
+  direction:ltr;
+  font-family:'Inter',sans-serif;
 }
 
-.about-text p {
-  color: var(--muted);
-  font-size: 15px;
-  margin-bottom: 15px;
+/* Sections */
+
+section {
+  padding:76px 0;
+  border-top:1px solid var(--line);
 }
 
-.about-card {
-  background: linear-gradient(145deg, #111c2d, #0b1220);
-  border: 1px solid var(--line);
-  padding: 38px;
-  text-align: center;
-  border-radius: 5px;
+.eyebrow {
+  font-size:11px;
+  letter-spacing:2px;
+  color:var(--gold);
+  font-weight:700;
+  direction:ltr;
 }
 
-.about-card .symbol {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 85px;
-  color: var(--gold);
-  line-height: 1.2;
-  direction: ltr;
+.heading {
+  font-size:32px;
+  margin:7px 0 24px;
 }
 
-.about-card p {
-  color: var(--muted);
-  font-size: 13px;
-  letter-spacing: 2px;
-  direction: ltr;
+.intro {
+  display:grid;
+  grid-template-columns:.7fr 1.3fr;
+  gap:60px;
 }
+
+.copy {
+  color:var(--muted);
+  font-size:15px;
+}
+
+.copy p {
+  margin-bottom:14px;
+}
+
+/* Specialization */
+
+.specialty {
+  background:linear-gradient(145deg,#101a2b,#0b1321);
+  border:1px solid var(--line);
+  border-right:3px solid var(--gold);
+  padding:28px;
+  margin-top:25px;
+}
+
+.specialty h3 {
+  color:var(--gold-light);
+  font-size:19px;
+  margin-bottom:10px;
+}
+
+.specialty p {
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* Statistics */
 
 .stats {
-  background: #0d1523;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  background:#0d1523;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
 }
 
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  text-align: center;
+.performance {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
 }
 
 .stat {
-  padding: 45px 15px;
-}
-
-.stat + .stat {
-  border-right: 1px solid var(--line);
+  padding:30px;
+  text-align:center;
+  border:1px solid var(--line);
+  background:linear-gradient(145deg,#131f33,#101827);
+  border-radius:12px;
 }
 
 .stat strong {
-  display: block;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 48px;
-  color: var(--gold-light);
-  direction: ltr;
+  display:block;
+  font-family:'Inter',sans-serif;
+  font-size:48px;
+  color:var(--gold-light);
+  direction:ltr;
+  line-height:1.4;
 }
 
 .stat span {
-  color: var(--muted);
-  font-size: 13px;
-  letter-spacing: 2px;
-  direction: ltr;
+  display:block;
+  color:var(--muted);
+  font-size:12px;
+  letter-spacing:2px;
+  direction:ltr;
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+/* Services */
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
 }
 
-.service {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  padding: 32px;
-  transition: .3s;
+.card {
+  padding:27px;
+  border:1px solid var(--line);
+  background:linear-gradient(145deg,var(--surface2),var(--surface));
+  border-radius:12px;
+  transition:.25s;
 }
 
-.service:hover {
-  transform: translateY(-5px);
-  border-color: var(--gold);
+.card:hover {
+  border-color:var(--gold);
+  transform:translateY(-4px);
 }
 
-.service-number {
-  color: var(--gold);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 30px;
-  direction: ltr;
+.card .index {
+  color:var(--gold);
+  font-size:12px;
+  letter-spacing:1px;
+  direction:ltr;
 }
 
-.service h3 {
-  font-size: 19px;
-  margin: 12px 0;
-  color: var(--gold-light);
+.card h3 {
+  font-size:18px;
+  margin:10px 0;
+  color:var(--gold-light);
 }
 
-.service p {
-  color: var(--muted);
-  font-size: 14px;
+.card p {
+  font-size:13px;
+  color:var(--muted);
 }
+
+/* Experience */
 
 .experience {
+  text-align:center;
   background:
-    radial-gradient(ellipse at center, rgba(214,179,106,.08), transparent 60%),
-    #0d1523;
-  text-align: center;
+    radial-gradient(ellipse at center,rgba(215,181,109,.08),transparent 65%);
 }
 
 .experience-box {
-  max-width: 750px;
-  margin: auto;
-  border: 1px solid var(--line);
-  padding: 50px 35px;
+  max-width:750px;
+  margin:auto;
+  padding:40px;
+  border:1px solid var(--line);
+  border-radius:15px;
+  background:rgba(16,26,43,.7);
 }
 
 .experience-box strong {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 65px;
-  color: var(--gold-light);
-  direction: ltr;
-  display: block;
+  display:block;
+  font-family:'Inter',sans-serif;
+  font-size:65px;
+  color:var(--gold);
+  direction:ltr;
 }
 
 .experience-box h3 {
-  font-size: 22px;
-  margin: 8px 0;
+  font-size:21px;
+  margin:5px 0 10px;
 }
 
 .experience-box p {
-  color: var(--muted);
-  font-size: 14px;
+  color:var(--muted);
+  font-size:14px;
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+/* Contact */
+
+.contact {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
 }
 
 .contact-item {
-  border: 1px solid var(--line);
-  padding: 25px 15px;
-  text-align: center;
-  background: var(--panel);
-  transition: .25s;
+  padding:25px 15px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:var(--surface);
+  text-align:center;
+  transition:.25s;
 }
 
 .contact-item:hover {
-  border-color: var(--gold);
-  transform: translateY(-4px);
+  border-color:var(--gold);
+  transform:translateY(-4px);
 }
 
 .contact-item small {
-  color: var(--gold);
-  display: block;
-  letter-spacing: 2px;
-  direction: ltr;
+  display:block;
+  color:var(--gold);
+  font-size:11px;
+  letter-spacing:2px;
+  direction:ltr;
 }
 
 .contact-item strong {
-  display: block;
-  margin-top: 8px;
-  font-size: 14px;
-  direction: ltr;
-  overflow-wrap: anywhere;
+  display:block;
+  margin-top:8px;
+  font-size:14px;
+  direction:ltr;
+  overflow-wrap:anywhere;
 }
 
 footer {
-  border-top: 1px solid var(--line);
-  padding: 25px 0;
-  text-align: center;
-  color: var(--muted);
-  font-size: 12px;
+  padding:28px 0;
+  border-top:1px solid var(--line);
+  color:#8490a4;
+  font-size:11px;
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
 }
 
-footer span { color: var(--gold); }
+footer span {
+  color:var(--gold);
+}
 
-[dir="ltr"] .nav-links { direction: ltr; }
-[dir="ltr"] .about-grid { direction: ltr; }
-[dir="ltr"] .hero-content { text-align: left; }
-[dir="ltr"] .hero-description { margin-left: 0; }
-[dir="ltr"] .service,
-[dir="ltr"] .about-text { text-align: left; }
+body[dir="ltr"] .hero,
+body[dir="ltr"] .intro {
+  direction:ltr;
+}
 
-@media(max-width: 760px) {
-  .nav { height: 70px; }
-  .nav-links { display: none; }
-  .hero { min-height: 570px; }
-  .hero-content { padding: 80px 0; }
-  .about-grid { grid-template-columns: 1fr; gap: 30px; }
-  .services-grid { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr; }
-  .section { padding: 70px 0; }
-  .section-title { margin-bottom: 35px; }
-  .stat strong { font-size: 39px; }
+body[dir="ltr"] .copy,
+body[dir="ltr"] .card {
+  text-align:left;
+}
+
+body[dir="ltr"] .specialty {
+  border-right:1px solid var(--line);
+  border-left:3px solid var(--gold);
+}
+
+body[dir="ltr"] .experience-box {
+  direction:ltr;
+}
+
+@media(max-width:760px) {
+  .links {
+    display:none;
+  }
+
+  nav {
+    height:70px;
+  }
+
+  .hero {
+    grid-template-columns:1fr;
+    padding:55px 0;
+    gap:30px;
+  }
+
+  .portrait {
+    height:260px;
+    grid-row:1;
+  }
+
+  .monogram {
+    font-size:82px;
+  }
+
+  .intro {
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+
+  .grid {
+    grid-template-columns:1fr;
+  }
+
+  .performance {
+    grid-template-columns:1fr;
+  }
+
+  .contact {
+    grid-template-columns:1fr;
+  }
+
+  section {
+    padding:60px 0;
+  }
+
+  .heading {
+    font-size:27px;
+  }
+
+  footer {
+    flex-direction:column;
+  }
 }
 </style>
 </head>
@@ -436,247 +539,322 @@ footer span { color: var(--gold); }
 <body dir="rtl">
 
 <header>
-  <div class="container nav">
+  <div class="container">
+    <nav>
 
-    <a class="brand" href="#home">
-      <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="goldGradient" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#f5e2aa"/>
-            <stop offset="50%" stop-color="#c49a4e"/>
-            <stop offset="100%" stop-color="#f0d99d"/>
-          </linearGradient>
-        </defs>
-        <rect x="3" y="3" width="94" height="94" rx="18"
-          fill="none" stroke="url(#goldGradient)" stroke-width="1.5"/>
-        <path d="M20 73 L40 25 L50 48 L60 25 L80 73"
-          fill="none" stroke="url(#goldGradient)" stroke-width="5"
-          stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M35 61 H65" stroke="url(#goldGradient)" stroke-width="2"/>
-      </svg>
-      <span class="brand-name">ARTIN MIANJI</span>
-    </a>
+      <a class="logo" href="#home">
+        ARTIN <b>MIANJI</b>
+      </a>
 
-    <nav class="nav-links">
-      <a href="#home" data-fa="خانه" data-en="Home">خانه</a>
-      <a href="#about" data-fa="درباره من" data-en="About">درباره من</a>
-      <a href="#services" data-fa="خدمات" data-en="Services">خدمات</a>
-      <a href="#contact" data-fa="ارتباط" data-en="Contact">ارتباط</a>
+      <div class="links">
+        <a href="#about" data-fa="درباره من" data-en="About">درباره من</a>
+        <a href="#trading" data-fa="تخصص" data-en="Specialization">تخصص</a>
+        <a href="#work" data-fa="خدمات" data-en="Services">خدمات</a>
+        <a href="#contact" data-fa="ارتباط" data-en="Contact">ارتباط</a>
+      </div>
+
+      <button class="language" id="languageToggle">EN</button>
+
     </nav>
-
-    <button class="lang-btn" id="languageToggle">EN</button>
   </div>
 </header>
 
 <main>
+<div class="container">
 
-<section class="hero" id="home">
-  <div class="container">
-    <div class="hero-content">
-      <div class="eyebrow" data-fa="تحلیلگر و معامله‌گر بازارهای مالی"
-        data-en="FINANCIAL MARKET ANALYST & TRADER">
-        تحلیلگر و معامله‌گر بازارهای مالی
-      </div>
+<!-- HERO -->
 
-      <h1>
-        <span data-fa="آرتین میانجی" data-en="ARTIN MIANJI">آرتین میانجی</span>
-      </h1>
+<div class="hero" id="home">
 
-      <p class="hero-description"
-        data-fa="متخصص تحلیل و معامله‌گری طلا (XAUUSD)، با رویکردی مبتنی بر ریاضیات پیشرفته، محاسبات دقیق و توسعه سیستم‌های معاملاتی اختصاصی."
-        data-en="Specialized in gold market analysis and XAUUSD trading, using advanced mathematics, precise calculations and proprietary trading systems.">
-        متخصص تحلیل و معامله‌گری طلا (XAUUSD)، با رویکردی مبتنی بر ریاضیات پیشرفته، محاسبات دقیق و توسعه سیستم‌های معاملاتی اختصاصی.
+  <div>
+    <div class="tag">PERSONAL BRAND · XAUUSD TRADER</div>
+
+    <h1>
+      <span data-fa="آرتین" data-en="ARTIN">آرتین</span>
+      <em data-fa="میانجی" data-en="MIANJI">میانجی</em>
+    </h1>
+
+    <h2
+      data-fa="تحلیلگر و معامله‌گر تخصصی بازار جهانی طلا"
+      data-en="Professional XAUUSD Analyst & Trader">
+      تحلیلگر و معامله‌گر تخصصی بازار جهانی طلا
+    </h2>
+
+    <p
+      data-fa="فعال در بازارهای مالی از سال ۲۰۲۲، با تمرکز تخصصی بر نماد XAUUSD و رویکردی مبتنی بر ریاضیات پیشرفته، محاسبات دقیق و توسعه سیستم‌های معاملاتی اختصاصی."
+      data-en="Active in financial markets since 2022, specializing in XAUUSD through an approach based on advanced mathematics, precise calculations and proprietary trading systems.">
+      فعال در بازارهای مالی از سال ۲۰۲۲، با تمرکز تخصصی بر نماد XAUUSD و رویکردی مبتنی بر ریاضیات پیشرفته، محاسبات دقیق و توسعه سیستم‌های معاملاتی اختصاصی.
+    </p>
+
+    <div class="buttons">
+      <a class="button" href="#about"
+        data-fa="درباره من"
+        data-en="About Me">درباره من</a>
+
+      <a class="button ghost" href="#contact"
+        data-fa="ارتباط با من"
+        data-en="Contact Me">ارتباط با من</a>
+    </div>
+  </div>
+
+  <div class="portrait">
+    <div class="monogram">AM</div>
+    <small>ARTIN MIANJI</small>
+  </div>
+
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+  <div class="intro">
+
+    <div>
+      <div class="eyebrow">01 / ABOUT</div>
+      <h2 class="heading"
+        data-fa="درباره آرتین"
+        data-en="About Artin">درباره آرتین</h2>
+    </div>
+
+    <div class="copy">
+
+      <p
+        data-fa="من آرتین میانجی هستم؛ معامله‌گر و تحلیلگر بازارهای مالی با تمرکز تخصصی بر بازار جهانی طلا."
+        data-en="I am Artin Mianji, a financial market trader and analyst specializing in the global gold market.">
+        من آرتین میانجی هستم؛ معامله‌گر و تحلیلگر بازارهای مالی با تمرکز تخصصی بر بازار جهانی طلا.
       </p>
 
-      <div class="hero-buttons">
-        <a href="#services" class="btn btn-primary"
-          data-fa="مشاهده خدمات" data-en="Explore Services">مشاهده خدمات</a>
-        <a href="#contact" class="btn btn-outline"
-          data-fa="ارتباط با من" data-en="Get in Touch">ارتباط با من</a>
-      </div>
+      <p
+        data-fa="مسیر حرفه‌ای من از سال ۲۰۲۲ آغاز شده است. در این مسیر، تمرکز اصلی من بر شناخت ساختار بازار، توسعه روش‌های تحلیلی و طراحی سیستم‌های معاملاتی اختصاصی بوده است."
+        data-en="My professional journey began in 2022. Since then, my primary focus has been understanding market structure, developing analytical methods and designing proprietary trading systems.">
+        مسیر حرفه‌ای من از سال ۲۰۲۲ آغاز شده است. در این مسیر، تمرکز اصلی من بر شناخت ساختار بازار، توسعه روش‌های تحلیلی و طراحی سیستم‌های معاملاتی اختصاصی بوده است.
+      </p>
+
+      <p
+        data-fa="رویکرد من بر پایه ریاضیات پیشرفته، محاسبات، هندسه و بررسی روابط ریاضی شکل گرفته است."
+        data-en="My approach is built on advanced mathematics, calculations, geometry and the study of mathematical relationships.">
+        رویکرد من بر پایه ریاضیات پیشرفته، محاسبات، هندسه و بررسی روابط ریاضی شکل گرفته است.
+      </p>
+
     </div>
+
   </div>
+
 </section>
 
-<section class="section" id="about">
-  <div class="container">
-    <div class="section-title">
-      <small>ABOUT ME</small>
-      <h2 data-fa="درباره <span>من</span>" data-en="About <span>Me</span>">
-        درباره <span>من</span>
-      </h2>
-    </div>
+<!-- SPECIALIZATION -->
 
-    <div class="about-grid">
-      <div class="about-text">
-        <h3 data-fa="نگاهی متفاوت به بازار طلا"
-          data-en="A Different Perspective on Gold">
-          نگاهی متفاوت به بازار طلا
-        </h3>
+<section id="trading">
 
-        <p
-          data-fa="فعالیت حرفه‌ای من در بازارهای مالی از سال ۲۰۲۲ آغاز شده و تمرکز تخصصی من بر تحلیل و معامله‌گری نماد XAUUSD است."
-          data-en="My professional journey in financial markets began in 2022, with a specialized focus on XAUUSD analysis and trading.">
-          فعالیت حرفه‌ای من در بازارهای مالی از سال ۲۰۲۲ آغاز شده و تمرکز تخصصی من بر تحلیل و معامله‌گری نماد XAUUSD است.
-        </p>
+  <div class="eyebrow">02 / SPECIALIZATION</div>
 
-        <p
-          data-fa="رویکرد تحلیلی من بر پایه ریاضیات پیشرفته، محاسبات، هندسه و بررسی روابط ریاضی شکل گرفته است؛ رویکردی که با هدف شناسایی ساختارهای بازار و طراحی استراتژی‌های معاملاتی اختصاصی توسعه یافته است."
-          data-en="My analytical approach is built on advanced mathematics, calculations, geometry and mathematical relationships, aimed at identifying market structures and developing proprietary trading strategies.">
-          رویکرد تحلیلی من بر پایه ریاضیات پیشرفته، محاسبات، هندسه و بررسی روابط ریاضی شکل گرفته است؛ رویکردی که با هدف شناسایی ساختارهای بازار و طراحی استراتژی‌های معاملاتی اختصاصی توسعه یافته است.
-        </p>
-      </div>
+  <h2 class="heading"
+    data-fa="تمرکز تخصصی"
+    data-en="Specialization">تمرکز تخصصی</h2>
 
-      <div class="about-card">
-        <div class="symbol">AM</div>
-        <p>ARTIN MIANJI</p>
-      </div>
-    </div>
+  <div class="specialty">
+
+    <h3>XAUUSD — GOLD</h3>
+
+    <p
+      data-fa="تمرکز فعالیت تحلیلی و معاملاتی من به‌صورت تخصصی بر نماد طلا در برابر دلار آمریکا (XAUUSD) است. این تمرکز امکان بررسی عمیق‌تر رفتار قیمت، ساختارهای بازار و توسعه مدل‌های تحلیلی اختصاصی را فراهم می‌کند."
+      data-en="My analytical and trading activity is exclusively focused on gold against the US dollar (XAUUSD). This specialization allows for deeper examination of price behavior, market structures and the development of proprietary analytical models.">
+      تمرکز فعالیت تحلیلی و معاملاتی من به‌صورت تخصصی بر نماد طلا در برابر دلار آمریکا (XAUUSD) است. این تمرکز امکان بررسی عمیق‌تر رفتار قیمت، ساختارهای بازار و توسعه مدل‌های تحلیلی اختصاصی را فراهم می‌کند.
+    </p>
+
   </div>
+
 </section>
+
+<!-- PERFORMANCE -->
 
 <section class="stats">
-  <div class="container stats-grid">
+
+  <div class="eyebrow">03 / PERFORMANCE</div>
+
+  <h2 class="heading"
+    data-fa="شاخص‌های عملکرد"
+    data-en="Performance Metrics">شاخص‌های عملکرد</h2>
+
+  <div class="performance">
+
     <div class="stat">
       <strong>75%</strong>
       <span>WIN RATE</span>
     </div>
+
     <div class="stat">
       <strong>1:3</strong>
       <span>RISK / REWARD</span>
     </div>
+
   </div>
+
 </section>
 
-<section class="section" id="services">
-  <div class="container">
-    <div class="section-title">
-      <small>WHAT I DO</small>
-      <h2 data-fa="حوزه‌های <span>فعالیت</span>"
-        data-en="Areas of <span>Expertise</span>">
-        حوزه‌های <span>فعالیت</span>
-      </h2>
-    </div>
+<!-- SERVICES -->
 
-    <div class="services-grid">
+<section id="work">
 
-      <div class="service">
-        <div class="service-number">01</div>
-        <h3 data-fa="تحلیل تخصصی XAUUSD"
-          data-en="XAUUSD Market Analysis">تحلیل تخصصی XAUUSD</h3>
-        <p
-          data-fa="بررسی ساختار بازار طلا، تحلیل حرکات قیمت و شناسایی موقعیت‌های معاملاتی بر اساس سیستم تحلیلی اختصاصی."
-          data-en="Gold market structure analysis, price action evaluation and identification of trading opportunities through a proprietary analytical system.">
-          بررسی ساختار بازار طلا، تحلیل حرکات قیمت و شناسایی موقعیت‌های معاملاتی بر اساس سیستم تحلیلی اختصاصی.
-        </p>
-      </div>
+  <div class="eyebrow">04 / SERVICES</div>
 
-      <div class="service">
-        <div class="service-number">02</div>
-        <h3 data-fa="مشاوره معاملاتی"
-          data-en="Trading Consultation">مشاوره معاملاتی</h3>
-        <p
-          data-fa="ارائه مشاوره تخصصی در زمینه تحلیل بازار، تدوین استراتژی و بهینه‌سازی تصمیمات معاملاتی."
-          data-en="Professional guidance in market analysis, strategy development and optimization of trading decisions.">
-          ارائه مشاوره تخصصی در زمینه تحلیل بازار، تدوین استراتژی و بهینه‌سازی تصمیمات معاملاتی.
-        </p>
-      </div>
+  <h2 class="heading"
+    data-fa="خدمات و فعالیت‌ها"
+    data-en="Services & Activities">خدمات و فعالیت‌ها</h2>
 
-      <div class="service">
-        <div class="service-number">03</div>
-        <h3 data-fa="مدیریت و اجرای معاملات"
-          data-en="Trade Management & Execution">
-          مدیریت و اجرای معاملات
-        </h3>
-        <p
-          data-fa="مدیریت و اجرای معاملات در حساب معاملاتی سرمایه‌گذار، بر پایه استراتژی‌های تحلیلی اختصاصی، اصول مدیریت ریسک و توافق طرفین، همراه با نظارت مستمر بر عملکرد حساب."
-          data-en="Management and execution of trades in the investor's trading account, based on proprietary analytical strategies, risk management principles and mutual agreement, with continuous account performance monitoring.">
-          مدیریت و اجرای معاملات در حساب معاملاتی سرمایه‌گذار، بر پایه استراتژی‌های تحلیلی اختصاصی، اصول مدیریت ریسک و توافق طرفین، همراه با نظارت مستمر بر عملکرد حساب.
-        </p>
-      </div>
+  <div class="grid">
 
-      <div class="service">
-        <div class="service-number">04</div>
-        <h3 data-fa="توسعه سیستم معاملاتی"
-          data-en="Trading System Development">
-          توسعه سیستم معاملاتی
-        </h3>
-        <p
-          data-fa="طراحی و توسعه ساختارهای تحلیلی و سیستم‌های معاملاتی مبتنی بر روابط ریاضی و محاسبات تخصصی."
-          data-en="Design and development of analytical frameworks and trading systems based on mathematical relationships and specialized calculations.">
-          طراحی و توسعه ساختارهای تحلیلی و سیستم‌های معاملاتی مبتنی بر روابط ریاضی و محاسبات تخصصی.
-        </p>
-      </div>
+    <article class="card">
+      <div class="index">01 — ANALYSIS</div>
 
-    </div>
-  </div>
-</section>
+      <h3
+        data-fa="تحلیل تخصصی XAUUSD"
+        data-en="XAUUSD Analysis">تحلیل تخصصی XAUUSD</h3>
 
-<section class="section experience">
-  <div class="container">
-    <div class="experience-box">
-      <strong>2022</strong>
-      <h3 data-fa="آغاز مسیر حرفه‌ای"
-        data-en="The Beginning of My Professional Journey">
-        آغاز مسیر حرفه‌ای
-      </h3>
       <p
-        data-fa="تمرکز تخصصی بر بازار طلا و توسعه رویکردهای تحلیلی اختصاصی"
-        data-en="Specialized focus on the gold market and development of proprietary analytical approaches">
-        تمرکز تخصصی بر بازار طلا و توسعه رویکردهای تحلیلی اختصاصی
+        data-fa="بررسی ساختار بازار طلا، تحلیل حرکات قیمت و شناسایی موقعیت‌های معاملاتی بر اساس سیستم تحلیلی اختصاصی."
+        data-en="Gold market structure analysis, price movement evaluation and identification of trading opportunities through a proprietary analytical system.">
+        بررسی ساختار بازار طلا، تحلیل حرکات قیمت و شناسایی موقعیت‌های معاملاتی بر اساس سیستم تحلیلی اختصاصی.
       </p>
-    </div>
+    </article>
+
+    <article class="card">
+      <div class="index">02 — CONSULTATION</div>
+
+      <h3
+        data-fa="مشاوره معاملاتی"
+        data-en="Trading Consultation">مشاوره معاملاتی</h3>
+
+      <p
+        data-fa="ارائه مشاوره تخصصی در زمینه تحلیل بازار، تدوین استراتژی و بهینه‌سازی تصمیمات معاملاتی."
+        data-en="Professional consultation in market analysis, strategy development and optimization of trading decisions.">
+        ارائه مشاوره تخصصی در زمینه تحلیل بازار، تدوین استراتژی و بهینه‌سازی تصمیمات معاملاتی.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="index">03 — MANAGEMENT</div>
+
+      <h3
+        data-fa="مدیریت و اجرای معاملات"
+        data-en="Trade Management & Execution">مدیریت و اجرای معاملات</h3>
+
+      <p
+        data-fa="مدیریت و اجرای معاملات در حساب معاملاتی سرمایه‌گذار، بر پایه استراتژی‌های تحلیلی اختصاصی، اصول مدیریت ریسک و توافق طرفین، همراه با نظارت مستمر بر عملکرد حساب."
+        data-en="Management and execution of trades in the investor's trading account, based on proprietary analytical strategies, risk management principles and mutual agreement, with continuous monitoring of account performance.">
+        مدیریت و اجرای معاملات در حساب معاملاتی سرمایه‌گذار، بر پایه استراتژی‌های تحلیلی اختصاصی، اصول مدیریت ریسک و توافق طرفین، همراه با نظارت مستمر بر عملکرد حساب.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="index">04 — DEVELOPMENT</div>
+
+      <h3
+        data-fa="توسعه سیستم معاملاتی"
+        data-en="Trading System Development">توسعه سیستم معاملاتی</h3>
+
+      <p
+        data-fa="طراحی و توسعه ساختارهای تحلیلی و سیستم‌های معاملاتی مبتنی بر روابط ریاضی و محاسبات تخصصی."
+        data-en="Design and development of analytical frameworks and trading systems based on mathematical relationships and specialized calculations.">
+        طراحی و توسعه ساختارهای تحلیلی و سیستم‌های معاملاتی مبتنی بر روابط ریاضی و محاسبات تخصصی.
+      </p>
+    </article>
+
   </div>
+
 </section>
 
-<section class="section" id="contact">
-  <div class="container">
-    <div class="section-title">
-      <small>GET IN TOUCH</small>
-      <h2 data-fa="ارتباط با <span>من</span>"
-        data-en="Contact <span>Me</span>">
-        ارتباط با <span>من</span>
-      </h2>
-    </div>
+<!-- EXPERIENCE -->
 
-    <div class="contact-grid">
+<section class="experience">
 
-      <a class="contact-item" href="https://t.me/Artin_mj12" target="_blank">
-        <small>TELEGRAM</small>
-        <strong>@Artin_mj12</strong>
-      </a>
+  <div class="experience-box">
 
-      <a class="contact-item" href="https://www.instagram.com/a.rtinx/" target="_blank">
-        <small>INSTAGRAM</small>
-        <strong>@a.rtinx</strong>
-      </a>
+    <strong>2022</strong>
 
-      <a class="contact-item" href="mailto:artintrd@gmail.com">
-        <small>EMAIL</small>
-        <strong>artintrd@gmail.com</strong>
-      </a>
+    <h3
+      data-fa="آغاز مسیر حرفه‌ای"
+      data-en="Professional Journey Began">آغاز مسیر حرفه‌ای</h3>
 
-    </div>
+    <p
+      data-fa="فعالیت تخصصی در بازارهای مالی با تمرکز بر تحلیل و معامله‌گری طلا"
+      data-en="Professional activity in financial markets, specializing in gold analysis and trading.">
+      فعالیت تخصصی در بازارهای مالی با تمرکز بر تحلیل و معامله‌گری طلا
+    </p>
+
   </div>
+
 </section>
 
+<!-- CONTACT -->
+
+<section id="contact">
+
+  <div class="eyebrow">05 / CONTACT</div>
+
+  <h2 class="heading"
+    data-fa="راه‌های ارتباطی"
+    data-en="Get in Touch">راه‌های ارتباطی</h2>
+
+  <div class="contact">
+
+    <a class="contact-item"
+       href="https://t.me/Artin_mj12"
+       target="_blank"
+       rel="noopener">
+
+      <small>TELEGRAM</small>
+      <strong>@Artin_mj12</strong>
+
+    </a>
+
+    <a class="contact-item"
+       href="https://www.instagram.com/a.rtinx/"
+       target="_blank"
+       rel="noopener">
+
+      <small>INSTAGRAM</small>
+      <strong>@a.rtinx</strong>
+
+    </a>
+
+    <a class="contact-item"
+       href="mailto:artintrd@gmail.com">
+
+      <small>EMAIL</small>
+      <strong>artintrd@gmail.com</strong>
+
+    </a>
+
+  </div>
+
+</section>
+
+</div>
 </main>
 
 <footer>
-  <div class="container">
-    <span>ARTIN MIANJI</span> —
-    <span data-fa="تمامی حقوق محفوظ است."
-      data-en="All Rights Reserved.">تمامی حقوق محفوظ است.</span>
-    <span> © 2026</span>
+  <div class="container" style="display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap">
+
+    <span>© 2026 ARTIN MIANJI</span>
+
+    <span
+      data-fa="وب‌سایت رسمی آرتین میانجی"
+      data-en="Official Website of Artin Mianji">
+      وب‌سایت رسمی آرتین میانجی
+    </span>
+
   </div>
 </footer>
 
 <script>
-const toggle = document.getElementById("languageToggle");
+const languageButton = document.getElementById("languageToggle");
 
-let currentLanguage = "fa";
+let currentLanguage = localStorage.getItem("artin-language") || "fa";
 
-function setLanguage(language) {
+function changeLanguage(language) {
+
   currentLanguage = language;
 
   document.documentElement.lang = language;
@@ -684,22 +862,19 @@ function setLanguage(language) {
   document.body.dir = language === "fa" ? "rtl" : "ltr";
 
   document.querySelectorAll("[data-fa][data-en]").forEach(element => {
-    element.innerHTML = element.dataset[language];
+    element.innerHTML = element.getAttribute("data-" + language);
   });
 
-  toggle.textContent = language === "fa" ? "EN" : "FA";
+  languageButton.textContent = language === "fa" ? "EN" : "FA";
 
   localStorage.setItem("artin-language", language);
 }
 
-toggle.addEventListener("click", () => {
-  setLanguage(currentLanguage === "fa" ? "en" : "fa");
+languageButton.addEventListener("click", () => {
+  changeLanguage(currentLanguage === "fa" ? "en" : "fa");
 });
 
-const savedLanguage = localStorage.getItem("artin-language");
-if (savedLanguage === "en") {
-  setLanguage("en");
-}
+changeLanguage(currentLanguage);
 </script>
 
 </body>
